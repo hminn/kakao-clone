@@ -1,0 +1,74 @@
+<!--
+# 파일명을 왜 index로?
+# 웹 서버들이 index 파일을 제일 먼저 찾도록 설계되어있기 때문 (default : index)
+
+# 태그의 형식 (항상 태그는 열고 닫아야 한다.)
+# <name attribute="value">Content</name>
+
+# Example
+# <human gender = "male">Human</human>
+# <dog breed="german-shepard">Dog</dog>
+
+<title>This is the title of the document</title>
+<a href="https://google.com"> Go to google</a>
+-->
+
+<!--
+<!DOCTYPE html>
+# 이 태그는 구글 크롬으로 하여금 이 문서가 html 문서임을 알려주는 역할
+# 이 태그는 self-contained 태그로 혼자 스스로 열고 닫는 태그이므로 닫지 않아도 된다.
+-->
+<!DOCTYPE html>
+
+<!-- # 문서는 크게 2가지 부분으로 나뉨 (Head/Body) -->
+<html>
+<!-- # head는 유저에게 보이지 않는다. -->
+<!-- # head는 브라우저에게 웹사이트에 관한 필요한 정보를 제공하는 역할 -->
+  <head>
+    <!-- # meta 는 추가정보를 전달해주는 역할 -->
+    <!-- # 유저를 위한 정보가 아닌 브라우저를 위한 정보 -->
+    <!-- # charset : encoding 방식을 각 언어에 맞게 세팅  -->
+    <meta charset="utf-8">
+    <!-- # name="?" : 웹사이트에서 검색을 했을 때 볼 수 있는 해당 페이지에 대한 간략한 설명글을 전달 -->
+    <meta name="description" content = "Welcome to my Kakao Clone"
+    <meta name="author"
+    <title>This is my title</title>
+  </head>
+  <body>
+<!-- # h태그는 text를 Highlight 해주는 역할 (제목을 쓰거나 등등,,) -->
+<!-- # 이 태그는 1부터 6까지 크기 순서대로 있다. 숫자가 클수록 작아짐 -->
+    <h1>This is my big title</h1>
+
+    <!-- # (1) semantic tag : 의미가 있는 태그 -->
+    <!-- # ex) header, article, section etc.. -->
+    <header>This is an important header</header>
+
+    <!-- # (2) non-semantic tag : 의미가 없는 태그 -->
+    <!-- # 무언가를 지칭하지도 않고 아무 의미가 없음 -->
+
+    <!-- # div : 박스 같은 것이 필요할 때 사용하는 태그, 그 안에 contents를 채워 넣고자 할 때 -->
+    <div>whatever</div>
+    <!-- # span : 텍스트를 위한 컨테이너 -->
+    <span>something else</span>
+    <h6>This is my small title</h6>
+  </body>
+
+  <body>
+    <section>
+      <!-- # 동일한 태그가 나왔을 때 각각을 구분하기 위해 id를 부여한다. -->
+      <!-- # id는 여권번호처럼 고유하다. -->
+      <!-- # but, class는 속성을 나타내는 것으로 여러 개 존재할 수 있다. 동일한 속성이 있을때마다 계속! -->
+      <!-- # 같은 class에 대해 동일하게 변경사항을 적용할 때 등의 상황에서 유용하게 사용된다. -->
+      <header id="headerNumberOne" class="defaultHeader">
+        <h1>Title of a section</h1>
+      </header>
+    </section>
+    <div>
+      <header id="differentHeader" class="defaultHeader">
+        Title of the unknown container
+      </header>
+    </div>
+  </body>
+
+
+</html>
