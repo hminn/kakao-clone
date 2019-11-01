@@ -1,0 +1,8 @@
+/* tag-name : selector  ex) h1, a, header etc.. 태그, 링크, 문단, 헤더, 푸터 모두 selector가 될 수 있다!*/
+/* selector (id, class, tag name) 의 형식으로 selector를 지정해줄 수 있음 */
+h1 {
+  /* property-name : value; */
+  /* property는 위와 같이 작성해주면 된다. {}사이에 오면 되고, 맨 뒤에 ;를 꼭 붙여줘야함. */
+  color : green;
+  ;
+}

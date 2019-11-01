@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kokoa Tribe</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>#4 Code Challenge</title>
+    <style>
+        body{
+            /* background-color: skyblue; */
+            font-family: sans-serif;
+            height: 1000px;
+            margin:0px;
+            padding:0px;
+        }
+        .big-box{
+            display: flex;
+            background-color: skyblue;
+            width:100%;
+            height:100%;
+            /* justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+            /* justify-content: flex-end; */
+            align-items: center;
+        }
+        .mid-box{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: pink;
+            height:300px;
+            width: 300px;
+        }
+        .small-box{
+            background-color: gray;
+            height : 90px;
+            width : 90px;
+        }
+        .small-box:nth-child(2):hover{
+            background-color: red;
+        }
+    </style>
+</head>
+
+  <body>
+      <div class="big-box">
+          <div class="mid-box">
+              <div class="small-box"></div>
+              <div class="small-box"></div>
+              <div class="small-box"></div>
+          </div>
+      </div>
+  </body>
+</html>

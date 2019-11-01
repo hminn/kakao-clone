@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Position</title>
+        <style>
+            body,html{
+                height:100%;
+            }
+            body{
+                /* body의 height를 400%로 설정한 것은 드래그를 할 수 있게 만들기 위해서*/
+                height:400%; 
+                background-color: red;
+            }
+            /* #boxOne{
+                height:300px;
+                width:300px;
+                background-color: yellow;
+                position:static;
+            }
+            #boxTwo{
+                height:300px;
+                width:300px;
+                background-color: green;
+                position:fixed;
+                bottom: 30%;
+                left: 40%;
+            } */
+            .abs-box{
+                width:400px;
+                height:200px;
+                background-color:yellow;
+                position : relative;
+            }
+            .abs-child{
+                width:100px;
+                height:100px;
+                background-color:green;
+                position: absolute;
+                right:10px;
+                top:25%;
+            }
+            </style>
+
+    </head>
+    <body>
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+    <!-- <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+            <div class="box-child"></div>
+        </div> -->
+    
+    </body>
+</html>
