@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content = "Welcome to my Kakao Clone">
+    <meta name="author">
+    <title>Animations</title>
+    <style>
+        body{
+            height: 1400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .box1{
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            height: 600px;
+        }
+        .little-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            background-color: white;
+            margin: 0px 10px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+
+        .little-box{
+            animation: 1s left_rotate infinite ease-in-out;
+        }
+        @keyframes left_rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }        
+            100%{
+                transform: rotate(180deg);
+            }    
+        }
+
+        .box2{
+            background-color: rgb(141, 236, 189);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            height: 600px;
+        }
+        .rectangle{
+            background-color: white;
+            margin : 0px 3px;
+            width : 10px;
+            height: 40px;
+        }
+        .rectangle:nth-child(1){
+            animation: 1.5s cheese1 infinite ease-in-out 1s;
+        }
+        .rectangle:nth-child(2){
+            animation: 1.5s cheese2 infinite ease-in-out 1s;
+        }
+        .rectangle:nth-child(3){
+            animation: 1.5s cheese3 infinite ease-in-out 1s;
+        }
+        .rectangle:nth-child(4){
+            animation: 1.5s cheese4 infinite ease-in-out 1s;
+        }
+        .rectangle:nth-child(5){
+            animation: 1.5s cheese5 infinite ease-in-out 1s;
+        }
+        @keyframes cheese1 {
+            0%{
+                transform: none;
+            }
+            20%{
+                transform: scale(1,2.2);
+            }
+            40%{
+                transform: none;
+            }
+        }
+        @keyframes cheese2 {
+            10%{
+                transform: none;
+            }
+            30%{
+                transform: scale(1,2.2);
+            }
+            50%{
+                transform: none;
+            }
+        }
+        @keyframes cheese3 {
+            20%{
+                transform: none;
+            }
+            40%{
+                transform: scale(1,2.2);
+            }
+            60%{
+                transform: none;
+            }
+        }
+        @keyframes cheese4 {
+            30%{
+                transform: none;
+            }
+            50%{
+                transform: scale(1,2.2);
+            }
+            70%{
+                transform: none;
+            }
+        }
+        @keyframes cheese5 {
+            40%{
+                transform: none;
+            }
+            60%{
+                transform: scale(1,2.2);
+            }
+            80%{
+                transform: none;
+            }
+        }
+    </style>
+  </head>
+  <body>
+      <div class="box1">
+        <div class="little-box">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+      </div>
+      <div class="box2">
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+      </div>
+  </body>
+</html>
